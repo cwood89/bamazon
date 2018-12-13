@@ -1,0 +1,24 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "This app is an Amazon-like storefront using MySQL to store and    retrieve inventory values. Through the command line, users can place orders which will deplete stock from the stores inventory. Users can also access the bamazon-manager features, which gives you a menu of manager options.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwood89/bamazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwood89/bamazon/issues"
+  },
+  "homepage": "https://github.com/cwood89/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.2.1",
+    "mysql": "^2.16.0"
+  }
+}
