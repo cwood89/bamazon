@@ -26,7 +26,7 @@ Running this application will first display all of the items available for sale.
 - Otherwise, the order will be fulfilled.
    - The SQL database will be updaed reflect the remaining quantity.
    - Then the app will show the user the total cost of their purchase.
-
+   
  ### ***Bamazon Manager Options***
 
 Insert Snapshot
