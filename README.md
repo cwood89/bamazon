@@ -12,12 +12,12 @@ This app is an Amazon-like storefront using MySQL to store and    retrieve inven
 
 ### **Bamazon Store Front**
 
-Insert Snapshot
+![alt text](capture.jpg)
 
 Running this application will first display all of the items available for sale. 
 
 - The user will then be prompted with two messages.
-    - `Please enter item ID number of item you wish to purchase.`
+    - `"What item would you like to purchase?`
     - `How many would you like to purchase?`
 
 - Once the user has placed their order the application will then query the database to see if the store has enough of the product to fulfill the order.

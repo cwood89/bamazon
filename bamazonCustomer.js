@@ -14,7 +14,6 @@ var connection = mySQL.createConnection({
 connection.connect(function (err) {
     if (err) throw err;
     queryAllproducts();
-    // connection.end();
 });
 
 function queryAllproducts() {
@@ -23,7 +22,7 @@ function queryAllproducts() {
         for (var i = 0; i < res.length; i++) {
             console.log(res[i].id + " | " + res[i].product_name + " | " + res[i].price);
         }
-        console.log(chalk.red("-----------------------------------"));
+        console.log(chalk.red("---------------------------------------------"));
 
         askUser();
     });
@@ -71,11 +70,11 @@ function askUser() {
         connection.query(updateP, [answer.amount, answer.id],
             function (error) {
                 if (error) throw error;
-                if (quantity >= 0) {
+                if (quantity > 0) {
                     console.log("Your order is placed.\nYour total is: " + total);
                     connection.end();
                 } else {
-                    console.log("Insufficient quantity");
+                    console.log("Sold Out");
                     connection.end();
                 }
             }
