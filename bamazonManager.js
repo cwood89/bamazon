@@ -88,11 +88,11 @@ function addInventory() {
             console.log(res[i].id + " | " + res[i].product_name + " | " + res[i].stock_quantity);
         }
         console.log(chalk.red("---------------------------------------------"));
-        addPrompt();
+        updatePrompt();
     });
 }
 
-function addPrompt() {
+function updatePrompt() {
     inquirer.prompt([
         {
             name: "id",
@@ -127,11 +127,54 @@ function addPrompt() {
             function (err) {
                 if (err) throw err;
                 console.log("Product has been udated.");
+                askUser();
             });
-        askUser();
     });
 }
 
 function addProduct() {
-
+    inquirer.prompt([
+        {
+            name: "name",
+            type: "input",
+            message: "Enter name of product you would like to add:",
+        },
+        {
+            name: "department",
+            type: "input",
+            message: "Enter department name:",
+        },
+        {
+            name: "price",
+            type: "input",
+            message: "Enter price:",
+            validate: function (value) {
+                if (isNaN(value) === false) {
+                    return true;
+                }
+                return false;
+            }
+        },
+        {
+            name: "quantity",
+            type: "input",
+            message: "Enter stock quantity:",
+            validate: function (value) {
+                if (isNaN(value) === false) {
+                    return true;
+                }
+                return false;
+            }
+        }
+    ]).then(function (answer) {
+        var addP = [
+            "INSERT INTO products(product_name, department_name, price, stock_quantity)",
+            "VALUES(?, ?, ?, ?)",
+        ].join(" ");
+        connection.query(addP, [answer.name, answer.department, answer.price, answer.quantity], function (err) {
+            if (err) throw err;
+            console.log("Product has been added.");
+            askUser();
+        });
+    });
 }
