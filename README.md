@@ -14,7 +14,7 @@ This app is an Amazon-like storefront using MySQL to store and    retrieve inven
 
 ### **Bamazon Store Front**
 
-![alt text](images/BamaCustomer.jpg)
+![Homepage](images/BamaCustomer.jpg)
 
 Running this application will first display all of the items available for sale.
 
@@ -31,7 +31,7 @@ Running this application will first display all of the items available for sale.
 
 ### ***Bamazon Manager Options***
 
-![alt text](images/BamaManagerOptions.jpg)
+![Manager Page](images/BamaManagerOptions.jpg)
 
 Running this application will show a list of options:
 
@@ -41,15 +41,15 @@ Running this application will show a list of options:
   - The items prices
   - The quantity.
 
-![alt text](images/BamaManagerLow.jpg)
+![Low inventory view](images/BamaManagerLow.jpg)
 
 - `View Low Inventory`, will list all items with an inventory count lower than five.
 
-![alt text](images/BamaManagerAdd.jpg)
+![add stock view](images/BamaManagerAdd.jpg)
 
 - `Order Stock`, will let the user order more of any item currently in the store.
 
-![alt text](images/BamaManagerNew.jpg)
+![new product view](images/BamaManagerNew.jpg)
 
 - `Add New Product`, will allow the user to add a completely new product to the store.
 
