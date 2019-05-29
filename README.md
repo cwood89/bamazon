@@ -14,7 +14,7 @@ This app is an Amazon-like storefront using MySQL to store and    retrieve inven
 
 ### **Bamazon Store Front**
 
-![Homepage](images/BamaCustomer.jpg)
+![Homepage](images/BamaCustomer.png)
 
 Running this application will first display all of the items available for sale.
 
