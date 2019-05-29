@@ -31,7 +31,7 @@ Running this application will first display all of the items available for sale.
 
 ### ***Bamazon Manager Options***
 
-![Manager Page](images/BamaManagerOptions.jpg)
+![Manager Page](images/BamaManagerOptions.png)
 
 Running this application will show a list of options:
 
@@ -41,15 +41,15 @@ Running this application will show a list of options:
   - The items prices
   - The quantity.
 
-![Low inventory view](images/BamaManagerLow.jpg)
+![Low inventory view](images/BamaManagerLow.png)
 
 - `View Low Inventory`, will list all items with an inventory count lower than five.
 
-![add stock view](images/BamaManagerAdd.jpg)
+![add stock view](images/BamaManagerAdd.png)
 
 - `Order Stock`, will let the user order more of any item currently in the store.
 
-![new product view](images/BamaManagerNew.jpg)
+![new product view](images/BamaManagerNew.png)
 
 - `Add New Product`, will allow the user to add a completely new product to the store.
 
